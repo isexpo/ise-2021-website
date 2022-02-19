@@ -1,0 +1,57 @@
+/* header */
+.hindbold {
+    font-family: "Hind Bold";
+}
+
+.hindreg {
+    font-family: "Hind Regular";
+}
+
+.bg-article {
+    background-image: url("/img/icon/e-hall/article/bg-1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 0;
+}
+
+.bg-article2 {
+    background-image: url("/img/icon/e-hall/article/bg-2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 0;
+}
+
+.img-icon {
+    max-width: 240px;
+}
+
+.img-ripple {
+    max-width: 100vw;
+    max-height: 160px;
+}
+
+.img-icon-long {
+    max-width: 200px;
+}
+
+@media screen and (min-width: 755px) {
+    .img-icon {
+        max-width: 512px;
+    }
+
+    .img-icon-long {
+        max-width: 480px;
+    }
+}
+
+p.hindbold {
+    margin-bottom: 0;
+}
+
+.navbar {
+    background: #46025f;
+}
+
+.header {
+    margin-bottom: 0;
+}

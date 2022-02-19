@@ -1,0 +1,29 @@
+.content-share {
+    background: rgba(114, 69, 121, 0.46);
+    width: 100%;
+}
+
+.btn-platform:hover {
+    border: 2px solid #8818C9;
+    border-radius: 12px !important;
+}
+
+input[type="radio"]:checked + .btn-platform {
+    border: 2px solid #8818C9;
+    border-radius: 12px !important;
+}
+
+.btn-gradient{
+    background: linear-gradient(90deg, #CE00B1 0%, #8818C9 100.11%);
+    color: white;
+    font-weight: bold;
+}
+.btn-gradient:hover{
+    color:white;
+}
+
+.content-form{
+    background: rgba(114, 69, 121, 0.46);
+    backdrop-filter: blur(20px);
+    width:100%;
+}

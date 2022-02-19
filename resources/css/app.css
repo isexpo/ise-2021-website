@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*@layer base {*/
+/*    @font-face {*/
+/*        font-family: "Audimat Mono";*/
+/*        font-weight: 400;*/
+/*        src: url("../fonts/Audimat Mono Regular.TTF") format("ttf");*/
+/*    }*/
+/*    @font-face {*/
+/*        font-family: "Audimat Mono";*/
+/*        font-weight: 700;*/
+/*        src: url("../fonts/Audimat Mono Bold.TTF") format("ttf");*/
+/*    }*/
+/*}*/
+
+.registration-form .ganti-password-form .pengumuman-form .kupon-form {
+    @apply border-solid border-2 border-indigo-500 border
+}
+
+.input-text {
+    @apply w-full mt-3 p-2 focus:ring-4 focus:outline-none focus:border-transparent focus:ring-indigo-400 rounded-md
+}
+
+.input-radio {
+    @apply focus:ring-0 focus:ring-transparent text-indigo-500 p-2
+}
+
+.ganti-password-form__input-text {
+    @apply w-full mt-1 p-2 focus:ring-4 focus:outline-none focus:border-transparent focus:ring-indigo-400 rounded-md
+}
+
+.number-wizard {
+    @apply border-2 rounded-full p-5 h-5 w-5 flex items-center justify-center text-3xl
+}
+
+.number-wizard__content {
+    @apply uppercase flex align-middle
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}

@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600;700&display=swap');
+
+.c-sidebar .c-sidebar-nav-dropdown-toggle,
+.c-sidebar .c-sidebar-nav-link,
+.c-sidebar .c-sidebar-nav-dropdown-toggle .c-sidebar-nav-icon,
+.c-sidebar .c-sidebar-nav-link .c-sidebar-nav-icon,
+.c-sidebar .c-sidebar-nav-dropdown.c-show .c-sidebar-nav-dropdown-toggle,
+.c-sidebar .c-sidebar-nav-dropdown.c-show .c-sidebar-nav-link{
+    color: #8D8A86;
+}
+
+.c-sidebar .c-sidebar-nav-dropdown.c-show .c-sidebar-nav-dropdown-toggle:hover,
+.c-sidebar .c-sidebar-nav-dropdown.c-show .c-sidebar-nav-link:hover,
+.c-sidebar .c-sidebar-nav-dropdown.c-show .c-sidebar-nav-link.c-active{
+    color: white;
+}
+.c-sidebar-nav-link.logout, .cil-account-logout.c-sidebar-nav-icon.logout{
+    color: rgba(239, 68, 68,1);
+}
+.c-sidebar-nav-item {
+    padding: 4px 16px;
+}
+
+.c-sidebar .c-active.c-sidebar-nav-dropdown-toggle,
+.c-sidebar .c-sidebar-nav-link.c-active,
+.c-sidebar .c-sidebar-nav-dropdown-toggle:hover,
+.c-sidebar .c-sidebar-nav-link:hover {
+    color: #fff;
+    background: #FF726B;
+    border-radius: 10px;
+}
+
+.c-sidebar .c-sidebar-nav-dropdown.c-show {
+    background: white;
+}

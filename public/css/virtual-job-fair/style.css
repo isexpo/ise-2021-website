@@ -1,0 +1,1029 @@
+/*Font*/
+@font-face {
+    font-family: "Hind Bold";
+    src: url("/fonts/landing/Hind-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Hind Semi Bold";
+    src: url("/fonts/landing/Hind-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "Hind Normal";
+    src: url("/fonts/ds-landing/Hind-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Hind Regular";
+    src: url("/fonts/landing/Hind-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Mosk Extra-bold";
+    src: url("/fonts/landing/Mosk Ultra-Bold 900.ttf");
+}
+
+@font-face {
+    font-family: "Mosk 500";
+    src: url("/fonts/landing/Mosk Medium 500.ttf");
+}
+
+@font-face {
+    font-family: "Mosk 400";
+    src: url("/fonts/landing/Mosk\ Normal\ 400.ttf");
+}
+
+
+/*general*/
+body {
+    background-image: url("/img/ds-landing/background-ds-academy.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: #20022E;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 5px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #620157;
+}
+
+.btn:focus {
+    background: transparent;
+}
+
+h1 {
+    font-family: "Mosk Extra-bold";
+    letter-spacing: 4px;
+}
+
+.nav-link {
+    color: whitesmoke !important;
+}
+
+/* scrollup btn section start */
+.scroll-up-btn {
+    position: fixed;
+    background: linear-gradient(90.26deg, rgba(114, 69, 121, 0.322) 0%, rgba(114, 69, 121, 0.138) 98.99%);
+    right: 20px;
+    bottom: 200px;
+    text-align: center;
+    color: #fff;
+    z-index: 99999;
+    font-size: 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    padding: 0;
+}
+
+.scroll-up-btn img {
+    position: relative;
+    padding: 12px 12px;
+    top: -6px;
+}
+
+.scroll-up-btn.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.scroll-up-btn.show:hover {
+    opacity: .8;
+}
+
+/* navbar section start */
+
+.navbar {
+    background: #20022E;
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+.navbar-brand img {
+    height: 70px;
+}
+@media (max-width: 576px){
+    .navbar-brand img {
+        margin-left: 0px !important;
+    }
+}
+
+
+#navbar2 {
+    z-index: 998;
+    margin-top: 5.5em;
+    background: linear-gradient(90.26deg, rgba(114, 69, 121, 0.322) 0%, rgba(114, 69, 121, 0.138) 98.99%);
+}
+
+#navbar2 .nav-link {
+    transition: all 0.3s ease-in;
+}
+
+#navbar2 .nav-link:hover {
+    color: rgba(248, 143, 197, 1) !important;
+}
+
+#navbar2 #daftar {
+    margin-left: auto;
+    background: rgba(154, 33, 166, 1);
+    padding: 6px 48px;
+    border-radius: 8px;
+    color: white;
+    font-family: "Hind Normal";
+    letter-spacing: 2px;
+    border: 3px solid transparent;
+}
+
+#navbar2 #daftar:hover {
+    background-color: lightgrey;
+    color: rgba(154, 33, 166, 1) !important;
+    border: 3px solid rgba(154, 33, 166, 1);
+}
+
+#navbar2 #guidebook {
+    background: rgba(248, 143, 197, 1);
+    margin-right: 4em;
+    margin-left: 2em;
+    border-radius: 8px;
+    color: rgba(72, 4, 158, 1);
+    padding: 6px 20px;
+    font-family: "Hind Normal";
+    letter-spacing: 2px;
+    border: 3px solid transparent;
+}
+
+#navbar2 #guidebook:hover {
+    background-color: rgba(72, 4, 158, 1);
+    color: rgba(248, 143, 197, 1) !important;
+    border: 3px solid rgba(248, 143, 197, 1);
+}
+
+#navbar2 #guidebook img {
+    width: 1.25em;
+    background-color: rgba(248, 143, 197, 1);
+    border-radius: 4px;
+}
+
+.navbar-custom {
+    height: min-content;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-link {
+    color: #fff;
+    font-family: "Hind Bold";
+    background: transparent;
+}
+
+.navbar-nav .nav-link:hover {
+    border-bottom: 2px solid;
+    border-color: white;
+    color: whitesmoke;
+}
+
+.navbar-nav .nav-link:focus {
+    color: whitesmoke;
+}
+
+.navbar-nav .nav-link.active {
+    border-bottom: 2px solid;
+    border-color: white;
+}
+
+.active {
+    border-bottom: 2px solid;
+    border-color: white;
+}
+
+.nav-item {
+    margin: 0 12px;
+}
+
+.dropdown button {
+    background: transparent;
+    border: none;
+    font-family: "Hind Bold";
+    border-radius: 0;
+}
+
+.dropdown button:hover {
+    background-color: transparent;
+    border-bottom: 2px solid white;
+}
+
+.dropdown button:active {
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    box-shadow: none
+}
+
+.dropdown button:focus {
+    box-shadow: none;
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+.navbar .nav-item .dropdown-menu {
+    background: linear-gradient(93.42deg, #1F012E -10.92%, rgba(44, 1, 67, 0.79) 97.18%);
+    position: absolute;
+    padding: 12px;
+    left: -25em;
+    width: 40em;
+    border-radius: 20px;
+}
+
+#user {
+    width: 15em;
+    left: -5em;
+    padding: 12px 0;
+    border-radius: 10px;
+}
+
+
+.nav-item .dropdown-item img {
+    margin-right: 15px;
+    width: 25px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+#user .dropdown-item {
+    font-family: "Hind Regular";
+}
+
+.navbar .nav-item .dropdown-menu li {
+    font-family: "Hind Bold";
+}
+
+.dropdown-item {
+    color: white !important;
+    margin: 0;
+    border-radius: 5px;
+}
+
+.dropdown-item:hover {
+    background: linear-gradient(270deg, #8818C9 0%, #CE00B1 100%);
+    color: white;
+}
+
+.navbar .login {
+    background: linear-gradient(90deg, #CE00B1 0%, #8818C9 100%);
+    border-radius: 0.8rem;
+    font-family: "Hind Bold";
+    font-size: 1.2rem;
+    color: white;
+    padding: 10px 25px 10px 25px !important;
+    margin: 0 20px;
+    text-align: center;
+    transition: all .3s ease;
+}
+
+.navbar .login:hover {
+    box-shadow: -3px 3px 5px grey;
+    color: white;
+    border: none !important;
+    transform: translateY(-5px) translateX(4px);
+}
+
+.navbar .login:active {
+    box-shadow: 0 7px 10px grey;
+    font-size: 1.2rem;
+}
+
+#usernav {
+    margin-right: 3em;
+}
+
+/* header section start */
+.header {
+    padding-top: 15em;
+    margin-bottom: 8em;
+    min-height: 85vh;
+    color: white;
+    border-radius: 30px;
+}
+
+#header-img {
+    width: 25em;
+    transition: all .3s ease;
+}
+
+#header-img:hover{
+    transform: scale(1.125);
+}
+
+.header .col-4, .header .col-8 {
+    padding: 0;
+}
+
+#lebih-lanjut {
+    font-family: "Hind Regular";
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 3px;
+}
+
+#lebih-lanjut{
+    font-size: 24px;
+    font-family: "Hind Normal";
+}
+
+.header h1 {
+    font-family: "Mosk Extra-bold";
+    font-size: 3rem;
+    letter-spacing: 4px;
+}
+
+.header p {
+    font-family: "Hind Regular";
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: rgba(208, 208, 208, 1);
+}
+
+/* intro section start */
+#intro {
+    padding-top:2%;
+}
+
+#intro p {
+    font-family: "Hind Bold";
+    letter-spacing: 2px;
+}
+#intro p span{
+    text-decoration-line: underline;
+    -webkit-text-decoration-line: underline;
+    text-underline-offset: 8px;
+    -webkit-text-underline-offset: 8px;
+    text-decoration-color: #CE00B1;
+    -webkit-text-decoration-color: #CE00B1;
+    text-decoration-thickness: 6px;
+    -webkit-text-decoration-thickness: 6px;
+}
+#intro .countdown li{
+    list-style-type: none;
+    padding: 1px;
+    font-size: 8rem;
+    background: linear-gradient(180deg, #FFFFFF 32.22%, rgba(255, 255, 255, 0) 126.27%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+}
+@media (max-width:768px) {
+    #intro .countdown li{
+    font-size: 6rem;
+    }
+}
+@media (max-width:576px) {
+    #intro .countdown li{
+    font-size: 3rem;
+    }
+}
+
+/* filter section start */
+.filter-row h5{
+    color: white;
+    font-family: "Hind Semi Bold";
+    font-size: 24px;
+}
+
+#filter-btn{
+    font-family: "Hind Normal";
+    font-size: 24px;
+    letter-spacing: 2px;
+    background: rgba(114, 69, 121, 0.9);
+    border: 2px solid rgba(196, 196, 196, 1);
+    border-radius: 10px;
+}
+
+#filter-btn:hover{
+    background: rgb(121, 75, 128);
+}
+
+/* checkbox customize */
+.checkbox {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: "Hind Semi Bold";
+    font-size: 24px;
+    color: white;
+  }
+
+  .modal-body .checkbox{
+      margin: 0 !important;
+      padding: 0;
+  }
+
+  @media (max-width:792px) {
+      .modal-body .checkbox{
+          padding-right: 40px;
+      }
+  }
+
+  .checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 5px;
+    height: 25px;
+    width: 25px;
+    background-color: transparent;
+    border: 3px solid white;
+    border-radius: 8px;
+    transition: all .3s ease;
+  }
+
+  .bookmarked{
+    content: url("/img/virtual-job/bookmarked-before.png");
+    position: absolute;
+    top: 0;
+    left: 10px;
+    height: 28px;
+  }
+  #modal-bookmarked{
+    position: relative !important;
+    top: 0;
+    left: 1rem;
+  }
+
+  .checkbox:hover input ~ .checkmark{
+    background-color: white;
+    border: 2px solid rgba(25, 172, 102, 1);
+  }
+  .checkbox:hover input ~ .bookmarked{
+    content: url('/img/virtual-job/bookmarked-hover.png');
+    position: absolute;
+    top: 0;
+    left: 10px;
+    height: 28px;
+  }
+  .checkbox:hover input ~ #modal-bookmarked{
+    position: relative !important;
+    top: 0;
+    left: 1rem;
+  }
+  @media (max-width:792px) {
+    .checkbox:hover input ~ .checkmark{
+        background-color: transparent;
+        border: 2px solid white;
+    }
+    .checkbox:hover input ~ .bookmarked{
+        content: url("/img/virtual-job/bookmarked-before.png");
+    }
+
+  }
+
+  .checkbox input:checked ~ .checkmark{
+    background-color: white;
+    border: 2px solid rgba(25, 172, 102, 1);
+  }
+
+  .checkbox input:checked ~ .bookmarked{
+      content: url('/img/virtual-job/bookmarked.png');
+      position: absolute;
+      top: 0;
+      left: 10px;
+      height: 28px;
+  }
+
+  .checkbox input:checked ~ #modal-bookmarked{
+    position: relative !important;
+    top: 0;
+    left: 1rem;
+  }
+
+  .checkmark:after{
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+
+  .checkbox input:checked ~ .checkmark:after{
+    display: block;
+  }
+
+
+  .checkbox .checkmark:after{
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid rgba(25, 172, 102, 1);
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+
+/* company section start */
+.company .card{
+    color: white;
+    font-family: "Hind Normal";
+    width: 360px;
+    height: 360px;
+    border-radius: 16px !important;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.688) 0%, rgba(248, 227, 255, 0.472) 100%) !important;
+    transition: all .4s ease;
+}
+
+.company .card:hover{
+    transform: scale(1.075);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.725) 0%, rgba(248, 227, 255, 0.5) 100%) !important;
+}
+
+.company .card a{
+    color: white;
+    font-size: 20px;
+    padding: 6px 36px !important;
+    background: linear-gradient(90deg, #CE00B1 0%, #8818C9 100.11%);
+    border-radius: 8px;
+    transition: all .4s ease;
+}
+
+.company .card a:hover{
+    transform: scale(1.075);
+}
+
+.company-card-btn{
+    background: transparent !important;
+    border: none;
+}
+
+/* modal section start */
+.modal-content{
+    background: linear-gradient(135deg, rgba(196, 196, 196, 0.55) 1.67%, rgba(196, 196, 196, 0.35) 101.67%);
+    backdrop-filter: blur(51.254px);
+
+}
+
+.modal-body img{
+    width: max-content;
+}
+@media (min-width: 576px){
+    .modal-dialog {
+        max-width: 50vw;
+        margin: 1.75rem auto;
+    }
+}
+
+body.modal-open .supreme-container{
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+}
+
+.tab-content{
+    background: #d9d4d8;
+    border-radius: 5px;
+}
+
+.video-player{
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.profile-text{
+    color: white;
+    font-family: "Hind Regular";
+    font-size: 24px;
+}
+
+#job-title{
+    color: white;
+    font-family: "Hind Bold";
+}
+
+#website-modal-btn{
+    color: white;
+    font-family: "Hind Semi Bold";
+    font-size: 18px;
+    padding: 6px 12px !important;
+    background: linear-gradient(90deg, #CE00B1 0%, #8818C9 100.11%);
+    border: 3px solid #8818C9;
+    border-radius: 8px;
+    transition: all .3s ease;
+}
+
+#website-modal-btn:hover{
+    transform: scale(1.025);
+    border-color: #CE00B1;
+}
+
+.nav-pills .nav-link{
+    color: white;
+    font-family: "Hind Semi Bold";
+    font-size: 18px;
+    padding: 6px 12px !important;
+    background: transparent;
+    border: 3px solid #CE00B1;
+    border-radius: 8px;
+    width: 12rem;
+    transition: all .3s ease;
+}
+
+.nav-pills .nav-link.active{
+    background: linear-gradient(90deg, #CE00B1 0%, #8818C9 100.11%);
+    border: 3px solid #8818C9;
+    border-radius: 8px;
+}
+
+.nav-pills .nav-link:hover{
+    transform: scale(1.025);
+}
+
+.modal-footer .apply-btn{
+    font-family: "Hind Normal";
+    color: white;
+    background: rgba(25, 172, 102, 1);
+    padding: 6px 6rem;
+}
+
+.modal-footer .apply-btn:hover{
+    background: rgb(22, 150, 88)
+}
+
+#company-desc, #apply-page, #privacyPolicy-page{
+    color: white;
+}
+
+#company-desc li,
+#privacyPolicy-page li{
+    font-family: "Hind Normal";
+}
+
+#apply-page h3,
+#privacyPolicy-page h3{
+    font-family: "Hind Semi Bold";
+}
+#apply-page p,
+#privacyPolicy-page p{
+    font-family: "Hind Normal";
+}
+
+.apply-desc, .apply-syarat, .apply-doc, .privacyPolicy-page{
+    background: #d9d4d8;
+}
+
+.back-btn{
+    color: white;
+    font-family: "Hind Normal";
+    background-color: grey;
+    transition: all .3s ease;
+}
+
+.back-btn:hover{
+    transform: scale(1.025);
+}
+
+.form-check-input:hover,
+.form-check-label:hover{
+    cursor: pointer;
+}
+
+/* faq section start */
+.faq {
+    min-height: 120vh;
+    margin-top: 15vh;
+}
+
+.faq h1 {
+    font-family: "Mosk Extra-bold";
+    color: whitesmoke;
+}
+
+.accordion {
+    margin: 2em 0;
+}
+
+.accordion button {
+    color: whitesmoke;
+}
+
+.accordion .accordion-collapse {
+    border-bottom: 3px solid whitesmoke;
+    border-left: 3px solid whitesmoke;
+    border-right: 3px solid whitesmoke;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    color: whitesmoke;
+}
+
+.accordion-header button {
+    color: none;
+    background: transparent;
+    border: 3px solid whitesmoke;
+    font-family: "Hind Semi Bold";
+    font-size: 1.3rem;
+}
+
+.accordion-header button:focus {
+    color: whitesmoke;
+    background: transparent;
+    border-color: whitesmoke;
+    box-shadow: none;
+}
+
+.accordion-header button:not(.collapsed) {
+    color: whitesmoke;
+    background: transparent;
+    border-color: whitesmoke;
+    box-shadow: none;
+}
+
+.accordion-item {
+    text-align: left;
+    font-family: "Hind Normal";
+    font-size: 1.3rem;
+    background: transparent !important;
+    margin-bottom: 1%;
+}
+
+/* whatsapp section start */
+.whatsapp {
+    background-color: rgba(114, 69, 121, 0.9);
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 8px;
+    padding: 12px 6px;
+    font-family: "Hind Regular";
+    z-index: 99999999;
+}
+
+.whatsapp-desktop {
+    width: 20em;
+}
+
+.whatsapp button {
+    position: relative;
+    left: 90%;
+}
+
+#close-wa:hover {
+    background-color: rgba(0, 0, 0, .25);
+}
+
+.whatsapp a {
+    position: relative;
+    left: 28%;
+    background-color: #25D366;
+    color: white;
+}
+
+.whatsapp a:hover {
+    color: lightgrey;
+}
+
+.whatsapp-icon {
+    display: none;
+}
+
+.whatsapp-icon:hover {
+    opacity: .8;
+}
+
+.whatsapp-responsive {
+    display: none;
+    color: whitesmoke;
+}
+
+/* footer section start */
+.footer {
+    background: #380152;
+    max-width: 100%;
+}
+
+#footer-right .listsocmed i {
+    transition: all .2s ease-in;
+}
+
+#footer-right .listsocmed i:hover {
+    color: rgba(248, 143, 197, 1) !important;
+}
+
+#footer-link li a {
+    transition: all .2s ease-in;
+}
+
+#footer-link li a:hover {
+    color: rgba(248, 143, 197, 1);
+}
+
+footer .container {
+    position: relative;
+    max-width: inherit;
+}
+
+#footer {
+    width: 1300px;
+}
+
+#footer img {
+    margin: 70px 0 0 0;
+}
+
+#footer h1 {
+    color: white;
+    font-size: 18px;
+    font-family: "Hind Bold";
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+#footer i {
+    color: white;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    letter-spacing: 8px;
+}
+
+#footer .shop i {
+    font-size: 0.8rem;
+}
+
+#footer-right {
+    margin-top: 100px;
+}
+
+#footer ul {
+    list-style-type: none;
+    display: inline-block;
+}
+
+#footer ul p {
+    color: white;
+}
+
+#footer ul a {
+    color: white;
+    text-decoration: none;
+}
+
+#footer ul a:hover {
+    color: rgba(248, 143, 197, 1) !important;
+    text-decoration: none;
+}
+
+#footer-right a {
+    color: transparent;
+}
+
+.footer hr {
+    border-top: 1px solid rgba(209, 108, 108, 0.45);
+}
+
+#copyright h2 {
+    font-family: "Hind Regular";
+    font-size: 1.2rem;
+    color: white;
+}
+
+/* CSS Media Query */
+@media (max-width: 1200px) {
+    #navbar2 {
+        white-space: nowrap;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    }
+
+    #navbar2 .nav {
+        white-space: nowrap;
+        flex-wrap: nowrap;
+    }
+}
+
+@media (max-width: 992px) {
+    .scroll-up-btn {
+        right: 20px;
+        bottom: 70px;
+    }
+
+    .scroll-up-btn img {
+        padding: 18px 16px;
+    }
+
+    #navbar2 .nav {
+        white-space: nowrap;
+        flex-wrap: nowrap;
+    }
+
+    .nav-link {
+        font-family: "Hind Normal";
+    }
+
+    .dropdown button:hover {
+        border: none !important;
+    }
+
+    .dropdown button:focus {
+        border: none !important;
+    }
+
+    .navbar .nav-item {
+        margin: 10px 0;
+    }
+
+    .navbar .nav-item .dropdown-menu {
+        position: initial;
+        width: 96vw;
+        background: transparent;
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+        border-radius: 0;
+    }
+
+    #user {
+        position: initial;
+        width: 96vw;
+        background: transparent;
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+        border-radius: 0;
+    }
+
+    .bottom-text .desc h2 {
+        margin-top: 0;
+        top: 2em;
+    }
+
+    .bottom-text .desc a {
+        top: 4em;
+    }
+
+    .whatsapp {
+        background-color: #25D366;
+        padding: 12px 16px;
+        bottom: 5px;
+    }
+
+    .whatsapp-desktop {
+        display: none;
+    }
+
+    .whatsapp-icon {
+        display: none;
+    }
+
+    .whatsapp-responsive {
+        display: block;
+    }
+
+    .whatsapp-responsive i {
+        position: relative;
+        left: -7px;
+        top: 2px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

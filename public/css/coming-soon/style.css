@@ -1,0 +1,199 @@
+@font-face {
+    font-family: "SF Distant Galaxy";
+    src: url("/fonts/coming-soon/sf_distant_galaxy/SF-Distant-Galaxy.ttf");
+}
+
+@font-face {
+    font-family: "SF Distant Galaxy Outline";
+    src: url("/fonts/coming-soon/sf_distant_galaxy/SF-Distant-Galaxy-Outline.ttf");
+}
+
+@font-face {
+    font-family: "Audimat Mono";
+    src: url("/fonts/coming-soon/audimat-mono/Audimat-Mono-Regular.TTF");
+}
+
+html {
+    min-height: 100vh;
+    background-image: url("/img/coming-soon/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+body {
+    background: transparent;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+
+/* COMING SOON */
+.contSatu {
+    min-height: 100px;
+    max-height: 100%;
+}
+
+.contDua {
+    min-height: 430px;
+    max-height: 100%;
+}
+
+.textJudul {
+    font-size: 85px;
+    line-height: 95px;
+    letter-spacing: 0.24em;
+    color: #ffffff;
+}
+
+.judulAsli {
+    font-family: "SF Distant Galaxy Outline";
+    top: 170px;
+}
+
+.judulBayangan {
+    font-family: "SF Distant Galaxy";
+    top: 180px;
+    filter: blur(20px);
+}
+
+.judulBayangan2 {
+    font-family: "SF Distant Galaxy Outline";
+    top: 175px;
+    filter: blur(5px);
+    color: black;
+}
+
+/* Stay Tuned */
+.subJudul {
+    font-family: "Audimat Mono";
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 42px;
+    color: #FFFFFF;
+}
+
+.highlight {
+    border-bottom: 7px #A7DDA2 solid;
+    border-radius: 3px;
+}
+
+/* countdown */
+.countdown {
+    font-family: "Audimat Mono";
+}
+
+.countdown li {
+    display: inline-block;
+    font-size: 20px;
+    list-style-type: none;
+    color: white;
+}
+
+#days,
+#hours,
+#minutes,
+#seconds {
+    color: #AEC1C5;
+    display: block;
+    font-size: 85px;
+    margin: 10px;
+    margin-bottom: 0px;
+    text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+}
+
+/* MEDSOS */
+.medsos {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.lingkaran {
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 1.5px solid #AEC1C5;
+    height: 50px;
+    width: 50px;
+    color: white;
+}
+
+.fa-twitter,
+.fa-youtube {
+    font-size: 1.75em;
+}
+
+.medsos :hover,
+.lingkaran :hover {
+    color: #A7DDA2;
+    border: 1.5px solid #A7DDA2;
+}
+
+/* CSS Media Query */
+@media (max-width: 1080px) {
+    .contDua {
+        padding-top: 40px;
+    }
+
+    .textJudul {
+        font-size: 75px;
+    }
+
+    .subJudul {
+        font-size: 25px;
+    }
+
+    .countdown li {
+        font-size: 20px;
+    }
+
+    #days,
+    #hours,
+    #minutes,
+    #seconds {
+        font-size: 75px;
+    }
+}
+
+@media (max-width: 768px) {
+    .textJudul {
+        font-size: 70px;
+    }
+
+    .subJudul {
+        font-size: 20px;
+    }
+
+    .countdown li {
+        font-size: 15px;
+    }
+
+    #days,
+    #hours,
+    #minutes,
+    #seconds {
+        font-size: 70px;
+    }
+
+    .fa-twitter,
+    .fa-youtube,
+    .fa-instagram {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 576px) {
+    html {
+        background-image: url("/img/coming-soon/bg-mobile.svg");
+        background-size: cover;
+    }
+
+    .textJudul {
+        font-size: 50px;
+    }
+
+    #days,
+    #hours,
+    #minutes,
+    #seconds {
+        font-size: 50px;
+    }
+}

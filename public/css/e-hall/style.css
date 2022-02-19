@@ -1,0 +1,416 @@
+/*Font*/
+@font-face {
+    font-family: "Hind Bold";
+    src: url("/fonts/landing/Hind-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Hind Semi Bold";
+    src: url("/fonts/landing/Hind-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "Hind Normal";
+    src: url("/fonts/ds-landing/Hind-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Hind Regular";
+    src: url("/fonts/landing/Hind-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Mosk Extra-bold";
+    src: url("/fonts/landing/Mosk Ultra-Bold 900.ttf");
+}
+
+@font-face {
+    font-family: "Mosk 500";
+    src: url("/fonts/landing/Mosk Medium 500.ttf");
+}
+
+@font-face {
+    font-family: "Mosk 400";
+    src: url("/fonts/landing/Mosk Normal 400.ttf");
+}
+
+
+/*general*/
+.bg {
+    background-image: url("/img/ds-landing/background-ds-academy.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 10rem;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: #20022E;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 5px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #620157;
+}
+
+.btn:focus {
+    background: transparent;
+}
+
+h1 {
+    font-family: "Mosk Extra-bold";
+    letter-spacing: 4px;
+}
+
+
+/* header sl section start */
+#navbar2 #daftar {
+    margin-left: auto;
+    background: #F88FC5;
+    padding: 6px 48px;
+    border-radius: 8px;
+    color: white;
+    font-family: "Hind Normal";
+    letter-spacing: 2px;
+    border: 3px solid transparent;
+}
+
+
+.header {
+    padding-top: 15em;
+    margin-bottom: 8em;
+    min-height: 90vh;
+    color: white;
+    border-radius: 30px;
+}
+
+#header-img {
+    width: 20em;
+}
+
+#logo-img {
+    width: 15em;
+}
+
+.header .col-4, .header .col-8 {
+    padding: 0;
+}
+
+#lebih-lanjut {
+    font-family: "Hind Regular";
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 3px;
+}
+
+#lebih-lanjut img {
+    width: 10px;
+    margin-left: 16px;
+}
+
+.header h1 {
+    font-family: "Mosk Extra-bold";
+    font-size: 3rem;
+    letter-spacing: 4px;
+}
+
+.header p {
+    font-family: "Hind Regular";
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+@media (max-width: 300px) {
+    #logo-img {
+        width: 10em;
+    }
+
+    .header h1 {
+        font-size: 2rem;
+    }
+}
+
+
+/* About section start */
+#intro p {
+    font-family: "Hind Regular";
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: #fff;
+}
+
+@media (max-width : 768px) {
+    #intro p{
+        font-size: 17px;
+    }
+
+    .swiper-button-prev,.swiper-button-next{
+
+        top: 15rem;
+    }
+}
+@media (max-width : 560px) {
+    .swiper-button-prev,.swiper-button-next{
+
+        top: 7rem;
+    }
+}
+/* bottom text section start */
+
+.bottom-text {
+    background: url("/img/startup-landing/backgroundDaftar.png");
+    height: 25rem;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bottom-text .desc h2 {
+    position: relative;
+    top: 6rem;
+    color: whitesmoke;
+    font-family: "Mosk Extra-bold";
+    letter-spacing: 2px;
+}
+
+.bottom-text .desc a {
+    position: relative;
+    top: 8rem;
+    background: linear-gradient(90deg, #CE00B1 0%, #8818C9 100.11%);
+    font-family: "Hind Bold";
+    letter-spacing: .1rem;
+    padding: 9px 45px;
+    font-size: 1.7rem;
+    color: whitesmoke;
+    border: 3px solid transparent;
+}
+
+.bottom-text .desc a:hover {
+    box-shadow: 0 3px 5px grey;
+    color: white;
+    text-decoration: none;
+}
+
+
+@media (max-width: 400px) {
+    .bottom-text {
+        height: 60vh;
+    }
+}
+
+
+
+
+/* Card Section */
+
+#adastartup h2{
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+#adastartup .card {
+    border-radius: 22px;
+    background: linear-gradient(0deg, rgba(133, 100, 149, 0.553125), rgba(133, 100, 149, 0.553125));
+
+}
+
+#adastartup .cardvid iframe {
+    height: 30vh;
+    width: 60%;
+}
+
+#adastartup .cardvid h2 {
+    font-family: "Hind Semi Bold";
+    color: #fff;
+}
+
+#adastartup  p {
+    font-family: "Hind Regular";
+    color: #fff;
+    font-size: 20px;
+}
+
+#adastartup a {
+    position: relative;
+    margin-top: 2rem;
+    background: linear-gradient(90deg, #CE00B1 0%, #8818C9 100.11%);
+    font-family: "Hind Semi Bold";
+    letter-spacing: .1rem;
+    padding: 9px 30px;
+    color: #fff;
+    border-color: transparent;
+}
+
+#adastartup a:hover {
+    box-shadow: 0 3px 5px grey;
+}
+
+/* footer section start */
+.footer {
+    background: #380152;
+    max-width: 100%;
+}
+
+#footer-right .listsocmed i {
+    transition: all .2s ease-in;
+}
+
+#footer-right .listsocmed i:hover {
+    color: rgba(248, 143, 197, 1);
+}
+
+#footer-link li a {
+    transition: all .2s ease-in;
+}
+
+#footer-link li a:hover {
+    color: rgba(248, 143, 197, 1);
+}
+
+footer .container {
+    position: relative;
+    max-width: inherit;
+}
+
+#footer {
+    width: 1300px;
+}
+
+#footer img {
+    margin: 70px 0 0 0;
+}
+
+#footer h1 {
+    color: white;
+    font-size: 18px;
+    font-family: "Hind Bold";
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+#footer i {
+    color: white;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    letter-spacing: 8px;
+}
+
+#footer .shop i {
+    font-size: 0.8rem;
+}
+
+#footer-right {
+    margin-top: 100px;
+}
+
+#footer ul {
+    list-style-type: none;
+    display: inline-block;
+}
+
+#footer ul p {
+    color: white;
+}
+
+#footer ul a {
+    color: white;
+    text-decoration: none;
+}
+
+#footer-right a {
+    color: transparent;
+}
+
+.footer hr {
+    border-top: 1px solid rgba(209, 108, 108, 0.45);
+}
+
+#copyright h2 {
+    font-family: "Hind Regular";
+    font-size: 1.2rem;
+    color: white;
+}
+
+
+/* whatsapp section start */
+.whatsapp {
+    background-color: rgba(114, 69, 121, 0.9);
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 8px;
+    padding: 12px 6px;
+    font-family: "Hind Regular";
+    z-index: 99999999;
+}
+
+.whatsapp-desktop {
+    width: 20em;
+}
+
+.whatsapp button {
+    position: relative;
+    left: 90%;
+}
+
+#close-wa:hover {
+    background-color: rgba(0, 0, 0, .25);
+}
+
+.whatsapp a {
+    position: relative;
+    left: 28%;
+    background-color: #25D366;
+    color: white;
+}
+
+.whatsapp a:hover {
+    color: lightgrey;
+}
+
+.whatsapp-icon {
+    display: none;
+}
+
+.whatsapp-icon:hover {
+    opacity: .8;
+}
+
+.whatsapp-responsive {
+    display: none;
+    color: whitesmoke;
+}
+
+
+@media (max-width: 992px) {
+    .whatsapp {
+        background-color: #25D366;
+        padding: 12px 16px;
+        bottom: 5px;
+    }
+
+    .whatsapp-desktop {
+        display: none;
+    }
+
+    .whatsapp-icon {
+        display: none;
+    }
+
+    .whatsapp-responsive {
+        display: block;
+    }
+
+    .whatsapp-responsive i {
+        position: relative;
+        left: -7px;
+        top: 2px;
+    }
+}

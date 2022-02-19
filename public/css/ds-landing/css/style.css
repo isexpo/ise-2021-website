@@ -1,0 +1,835 @@
+/*Font*/
+@font-face {
+    font-family: "Hind Bold";
+    src: url("/fonts/landing/Hind-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Hind Semi Bold";
+    src: url("/fonts/landing/Hind-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "Hind Normal";
+    src: url("/fonts/ds-landing/Hind-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Hind Regular";
+    src: url("/fonts/landing/Hind-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Mosk Extra-bold";
+    src: url("/fonts/landing/Mosk Ultra-Bold 900.ttf");
+}
+
+@font-face {
+    font-family: "Mosk 500";
+    src: url("/fonts/landing/Mosk Medium 500.ttf");
+}
+
+@font-face {
+    font-family: "Mosk 400";
+    src: url("/fonts/landing/Mosk\ Normal\ 400.ttf");
+}
+
+
+/*general*/
+body {
+    background-image: url("/img/ds-landing/background-ds-academy.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: #20022E;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 5px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #620157;
+}
+
+.btn:focus {
+    background: transparent;
+}
+
+h1 {
+    font-family: "Mosk Extra-bold";
+    letter-spacing: 4px;
+}
+
+.nav-link {
+    color: whitesmoke !important;
+}
+
+/* scrollup btn section start */
+.scroll-up-btn {
+    position: fixed;
+    background: linear-gradient(90.26deg, rgba(114, 69, 121, 0.322) 0%, rgba(114, 69, 121, 0.138) 98.99%);
+    right: 20px;
+    bottom: 200px;
+    text-align: center;
+    color: #fff;
+    z-index: 99999;
+    font-size: 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    padding: 0;
+}
+
+.scroll-up-btn img {
+    position: relative;
+    padding: 12px 12px;
+    top: -6px;
+}
+
+.scroll-up-btn.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.scroll-up-btn.show:hover {
+    opacity: .8;
+}
+
+/* navbar section start */
+
+.navbar {
+    background: #20022E;
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+.navbar-brand img {
+    height: 70px;
+}
+@media (max-width: 576px){
+    .navbar-brand img {
+        margin-left: 0px !important;
+    }
+}
+
+
+#navbar2 {
+    z-index: 998;
+    margin-top: 5.5em;
+    background: linear-gradient(90.26deg, rgba(114, 69, 121, 0.322) 0%, rgba(114, 69, 121, 0.138) 98.99%);
+}
+
+#navbar2 .nav-link {
+    transition: all 0.3s ease-in;
+}
+
+#navbar2 .nav-link:hover {
+    color: rgba(248, 143, 197, 1) !important;
+}
+
+#navbar2 #daftar {
+    margin-left: auto;
+    background: rgba(154, 33, 166, 1);
+    padding: 6px 48px;
+    border-radius: 8px;
+    color: white;
+    font-family: "Hind Normal";
+    letter-spacing: 2px;
+    border: 3px solid transparent;
+}
+
+#navbar2 #daftar:hover {
+    background-color: lightgrey;
+    color: rgba(154, 33, 166, 1) !important;
+    border: 3px solid rgba(154, 33, 166, 1);
+}
+
+#navbar2 #guidebook {
+    background: rgba(248, 143, 197, 1);
+    margin-right: 4em;
+    margin-left: 2em;
+    border-radius: 8px;
+    color: rgba(72, 4, 158, 1);
+    padding: 6px 20px;
+    font-family: "Hind Normal";
+    letter-spacing: 2px;
+    border: 3px solid transparent;
+}
+
+#navbar2 #guidebook:hover {
+    background-color: rgba(72, 4, 158, 1);
+    color: rgba(248, 143, 197, 1) !important;
+    border: 3px solid rgba(248, 143, 197, 1);
+}
+
+#navbar2 #guidebook img {
+    width: 1.25em;
+    background-color: rgba(248, 143, 197, 1);
+    border-radius: 4px;
+}
+
+.navbar-custom {
+    height: min-content;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-link {
+    color: #fff;
+    font-family: "Hind Bold";
+    background: transparent;
+}
+
+.navbar-nav .nav-link:hover {
+    border-bottom: 2px solid;
+    border-color: white;
+    color: whitesmoke;
+}
+
+.navbar-nav .nav-link:focus {
+    color: whitesmoke;
+}
+
+.navbar-nav .nav-link.active {
+    border-bottom: 2px solid;
+    border-color: white;
+}
+
+.active {
+    border-bottom: 2px solid;
+    border-color: white;
+}
+
+.nav-item {
+    margin: 0 12px;
+}
+
+.dropdown button {
+    background: transparent;
+    border: none;
+    font-family: "Hind Bold";
+    border-radius: 0;
+}
+
+.dropdown button:hover {
+    background-color: transparent;
+    border-bottom: 2px solid white;
+}
+
+.dropdown button:active {
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    box-shadow: none
+}
+
+.dropdown button:focus {
+    box-shadow: none;
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+.navbar .nav-item .dropdown-menu {
+    background: linear-gradient(93.42deg, #1F012E -10.92%, rgba(44, 1, 67, 0.79) 97.18%);
+    position: absolute;
+    padding: 12px;
+    left: -25em;
+    width: 40em;
+    border-radius: 20px;
+}
+
+#user {
+    width: 15em;
+    left: -5em;
+    padding: 12px 0;
+    border-radius: 10px;
+}
+
+
+.nav-item .dropdown-item img {
+    margin-right: 15px;
+    width: 25px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+#user .dropdown-item {
+    font-family: "Hind Regular";
+}
+
+.navbar .nav-item .dropdown-menu li {
+    font-family: "Hind Bold";
+}
+
+.dropdown-item {
+    color: white !important;
+    margin: 0;
+    border-radius: 5px;
+}
+
+.dropdown-item:hover {
+    background: linear-gradient(270deg, #8818C9 0%, #CE00B1 100%);
+    color: white;
+}
+
+.navbar .login {
+    background: linear-gradient(90deg, #CE00B1 0%, #8818C9 100%);
+    border-radius: 0.8rem;
+    font-family: "Hind Bold";
+    font-size: 1.2rem;
+    color: white;
+    padding: 10px 25px 10px 25px !important;
+    margin: 0 20px;
+    text-align: center;
+    transition: all .3s ease;
+}
+
+.navbar .login:hover {
+    box-shadow: -3px 3px 5px grey;
+    color: white;
+    border: none !important;
+    transform: translateY(-5px) translateX(4px);
+}
+
+.navbar .login:active {
+    box-shadow: 0 7px 10px grey;
+    font-size: 1.2rem;
+}
+
+#usernav {
+    margin-right: 3em;
+}
+
+/* header sl section start */
+.header {
+    padding-top: 15em;
+    margin-bottom: 8em;
+    min-height: 85vh;
+    color: white;
+    border-radius: 30px;
+}
+
+#header-img {
+    width: 20em;
+}
+
+.header .col-4, .header .col-8 {
+    padding: 0;
+}
+
+#lebih-lanjut {
+    font-family: "Hind Regular";
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 3px;
+}
+
+#lebih-lanjut img {
+    width: 10px;
+    margin-left: 16px;
+}
+
+.header h1 {
+    font-family: "Mosk Extra-bold";
+    font-size: 3rem;
+    letter-spacing: 4px;
+}
+
+.header p {
+    font-family: "Hind Regular";
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+/* intro section start */
+#intro {
+    padding-top: 10%;
+}
+
+#intro p {
+    font-family: "Hind Regular";
+    letter-spacing: 2px;
+}
+
+/* rangkaian materi start */
+#rangkaian-materi {
+    padding-top: 10%;
+    margin-bottom: 20vh;
+}
+
+/* speakers section start */
+#speakers {
+    padding-top: 10%;
+    margin-bottom: 20vh;
+}
+
+
+/* timeline section start */
+#timeline {
+    padding-top: 10%;
+    margin-bottom: 20vh;
+}
+
+.timeline h1 {
+    font-family: "Mosk Extra-bold";
+    letter-spacing: 4px;
+    color: whitesmoke;
+}
+
+.timeline h2 {
+    font-family: "Hind Bold";
+    font-size: 25px;
+    letter-spacing: 1px;
+    color: whitesmoke;
+}
+
+.timeline h5 {
+    font-family: "Hind Semi Bold";
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    margin: 5%;
+    color: whitesmoke;
+}
+
+.timeline h5 span {
+    font-family: 'Hind Regular';
+}
+
+.timeline p {
+    font-family: 'Hind Regular';
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+.timeline span {
+    font-family: "Hind Normal";
+    font-size: 23px;
+}
+
+#circle-timeline {
+    background: url("/img/ds-landing/garis-timeline.png");
+    background-size: 75vw;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#rocket {
+    background: linear-gradient(180deg, #CE00B1 0%, #8818C9 122.58%);
+}
+
+.circle {
+    width: 4em;
+    height: 4em;
+    background: white;
+    border: 8px solid rgba(172, 145, 193, 1);
+    border-radius: 50%;
+    margin: 0 40%;
+}
+
+#inside-circle {
+    height: 2em;
+    width: 2em;
+    background: white;
+    margin: 17%;
+    border-radius: 50%;
+}
+
+#timeline-horizontal {
+    display: none;
+}
+
+@media (min-width: 1487px) {
+    #timeline-horizontal {
+        display: block;
+    }
+}
+
+#timeline-small {
+    display: block;
+    color: whitesmoke;
+}
+
+@media (min-width: 1487px) {
+    #timeline-small {
+        display: none;
+    }
+}
+
+/* vertical timeline section */
+
+/* Timeline holder */
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+li.timeline-item {
+    margin: 20px 0;
+    background: rgba(114, 69, 121, 0.5);
+    border-top: 8px solid rgba(136, 24, 201, 1);
+}
+
+li.timeline-item ul {
+    color: white;
+    font-family: "Hind Regular";
+    font-size: 18px;
+    list-style-image: url("/img/ds-landing/bullet-point.png") !important;
+}
+
+
+/* faq section start */
+.faq {
+    min-height: 120vh;
+}
+
+.faq h1 {
+    font-family: "Mosk Extra-bold";
+    color: whitesmoke;
+}
+
+.accordion {
+    margin: 2em 0;
+}
+
+.accordion button {
+    color: whitesmoke;
+}
+
+.accordion .accordion-collapse {
+    border-bottom: 3px solid whitesmoke;
+    border-left: 3px solid whitesmoke;
+    border-right: 3px solid whitesmoke;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    color: whitesmoke;
+}
+
+.accordion-header button {
+    color: none;
+    background: transparent;
+    border: 3px solid whitesmoke;
+    font-family: "Hind Semi Bold";
+    font-size: 1.3rem;
+}
+
+.accordion-header button:focus {
+    color: whitesmoke;
+    background: transparent;
+    border-color: whitesmoke;
+    box-shadow: none;
+}
+
+.accordion-header button:not(.collapsed) {
+    color: whitesmoke;
+    background: transparent;
+    border-color: whitesmoke;
+    box-shadow: none;
+}
+
+.accordion-item {
+    text-align: left;
+    font-family: "Hind Normal";
+    font-size: 1.3rem;
+    background: transparent !important;
+    margin-bottom: 1%;
+}
+
+/* bottom text section start */
+
+.bottom-text {
+    background: linear-gradient(90deg, rgba(206, 0, 177, 0.7) 0%, rgba(136, 24, 201, 0.273) 100.11%);
+    height: 50vh;
+    margin: 10% 0;
+}
+
+.bottom-text .desc h2 {
+    position: relative;
+    top: 6rem;
+    color: whitesmoke;
+    font-family: "Mosk Extra-bold";
+    letter-spacing: 2px;
+}
+
+.bottom-text .desc a {
+    position: relative;
+    top: 8rem;
+    background: rgba(154, 33, 166, 1);
+    font-family: "Hind Bold";
+    letter-spacing: .1rem;
+    padding: 9px 45px;
+    color: whitesmoke;
+    border: 3px solid transparent;
+}
+
+.bottom-text .desc a:hover {
+    color: rgba(154, 33, 166, 1);
+    background: transparent;
+    border: 3px solid rgba(154, 33, 166, 1);
+}
+
+/* whatsapp section start */
+.whatsapp {
+    background-color: rgba(114, 69, 121, 0.9);
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 8px;
+    padding: 12px 6px;
+    font-family: "Hind Regular";
+    z-index: 99999999;
+}
+
+.whatsapp-desktop {
+    width: 20em;
+}
+
+.whatsapp button {
+    position: relative;
+    left: 90%;
+}
+
+#close-wa:hover {
+    background-color: rgba(0, 0, 0, .25);
+}
+
+.whatsapp a {
+    position: relative;
+    left: 28%;
+    background-color: #25D366;
+    color: white;
+}
+
+.whatsapp a:hover {
+    color: lightgrey;
+}
+
+.whatsapp-icon {
+    display: none;
+}
+
+.whatsapp-icon:hover {
+    opacity: .8;
+}
+
+.whatsapp-responsive {
+    display: none;
+    color: whitesmoke;
+}
+
+/* footer section start */
+.footer {
+    background: #380152;
+    max-width: 100%;
+}
+
+#footer-right .listsocmed i {
+    transition: all .2s ease-in;
+}
+
+#footer-right .listsocmed i:hover {
+    color: rgba(248, 143, 197, 1) !important;
+}
+
+#footer-link li a {
+    transition: all .2s ease-in;
+}
+
+#footer-link li a:hover {
+    color: rgba(248, 143, 197, 1);
+}
+
+footer .container {
+    position: relative;
+    max-width: inherit;
+}
+
+#footer {
+    width: 1300px;
+}
+
+#footer img {
+    margin: 70px 0 0 0;
+}
+
+#footer h1 {
+    color: white;
+    font-size: 18px;
+    font-family: "Hind Bold";
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+#footer i {
+    color: white;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    letter-spacing: 8px;
+}
+
+#footer .shop i {
+    font-size: 0.8rem;
+}
+
+#footer-right {
+    margin-top: 100px;
+}
+
+#footer ul {
+    list-style-type: none;
+    display: inline-block;
+}
+
+#footer ul p {
+    color: white;
+}
+
+#footer ul a {
+    color: white;
+    text-decoration: none;
+}
+
+#footer ul a:hover {
+    color: rgba(248, 143, 197, 1) !important;
+    text-decoration: none;
+}
+
+#footer-right a {
+    color: transparent;
+}
+
+.footer hr {
+    border-top: 1px solid rgba(209, 108, 108, 0.45);
+}
+
+#copyright h2 {
+    font-family: "Hind Regular";
+    font-size: 1.2rem;
+    color: white;
+}
+
+/* CSS Media Query */
+@media (max-width: 1200px) {
+    #navbar2 {
+        white-space: nowrap;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    }
+
+    #navbar2 .nav {
+        white-space: nowrap;
+        flex-wrap: nowrap;
+    }
+}
+
+@media (max-width: 992px) {
+    .scroll-up-btn {
+        right: 20px;
+        bottom: 70px;
+    }
+
+    .scroll-up-btn img {
+        padding: 18px 16px;
+    }
+
+    #navbar2 .nav {
+        white-space: nowrap;
+        flex-wrap: nowrap;
+    }
+
+    .nav-link {
+        font-family: "Hind Normal";
+    }
+
+    .dropdown button:hover {
+        border: none !important;
+    }
+
+    .dropdown button:focus {
+        border: none !important;
+    }
+
+    .navbar .nav-item {
+        margin: 10px 0;
+    }
+
+    .navbar .nav-item .dropdown-menu {
+        position: initial;
+        width: 96vw;
+        background: transparent;
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+        border-radius: 0;
+    }
+
+    #user {
+        position: initial;
+        width: 96vw;
+        background: transparent;
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+        border-radius: 0;
+    }
+
+    .bottom-text .desc h2 {
+        margin-top: 0;
+        top: 2em;
+    }
+
+    .bottom-text .desc a {
+        top: 4em;
+    }
+
+    .whatsapp {
+        background-color: #25D366;
+        padding: 12px 16px;
+        bottom: 5px;
+    }
+
+    .whatsapp-desktop {
+        display: none;
+    }
+
+    .whatsapp-icon {
+        display: none;
+    }
+
+    .whatsapp-responsive {
+        display: block;
+    }
+
+    .whatsapp-responsive i {
+        position: relative;
+        left: -7px;
+        top: 2px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
